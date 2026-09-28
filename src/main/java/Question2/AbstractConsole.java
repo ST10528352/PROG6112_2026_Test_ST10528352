@@ -3,7 +3,7 @@ package Question2;
 // FILE 2 - THE ABSTRACT CLASS
 // Stores the data: private variables, a constructor, and a get method for each variable.
  
-public abstract class AbstractConsole implements IConsoles {   // ← CHANGE: both names
+public abstract class AbstractConsole implements IConsoles {   
  
     // One variable per piece of data the question lists
     // (text = String, whole number = int, decimal = double)
@@ -12,7 +12,7 @@ public abstract class AbstractConsole implements IConsoles {   // ← CHANGE: bo
     private int getTotalSales;      
 
     // Constructor - same name as the class, one parameter per variable
-    public AbstractConsole(String name, String type, int quantity) {   // ← CHANGE
+    public AbstractConsole(String name, String type, int quantity) {   
         this.getStore = name;              
         this.getConsoleType = type;              
         this.getTotalSales = quantity;                  
