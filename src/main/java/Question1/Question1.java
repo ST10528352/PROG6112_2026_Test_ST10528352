@@ -9,21 +9,21 @@ public class Question1 {   // ← must be the same as your file name
         // BOX 1 - THE TABLE (values are given in the question)
  
         // Words down the LEFT side of the question's table
-        String[] rowNames = {"ROW 1", "ROW 2", "ROW 3"};   // ← CHANGE
+        String[] rowNames = {"CAPE TOWN", "PORT ELIZABETH", "PRETORIA"};   // ← CHANGE
  
         // Words along the TOP of the question's table
-        String[] colNames = {"COL 1", "COL 2", "COL 3"};   // ← CHANGE
+        String[] colNames = {"PS5", "XBOX", "SWITCH"};   // ← CHANGE
  
         // The numbers: one { } per ROW of the table, one number per COLUMN
         int[][] data = {
-            {10, 20, 30},    // ← CHANGE: numbers for ROW 1
-            {40, 50, 60},    // ← CHANGE: numbers for ROW 2
-            {70, 80, 90}     // ← CHANGE: numbers for ROW 3 (no comma on the last one)
+            {1000, 2000, 3000},    // ← CHANGE: numbers for ROW 1
+            {2000, 3000, 4000},    // ← CHANGE: numbers for ROW 2
+            {1500, 1100, 1200}     // ← CHANGE: numbers for ROW 3 (no comma on the last one)
         };
         
         // BOX 2 - PRINT THE TABLE
         System.out.println("----------------------------------------------");
-        System.out.println("\nGAMING CONSOLE REPORT");   // ← CHANGE
+        System.out.println("GAMING CONSOLE REPORT");   // ← CHANGE
         System.out.println("----------------------------------------------");
   
         // Top line: an empty corner, then each column name
@@ -41,7 +41,7 @@ public class Question1 {   // ← must be the same as your file name
             }
             System.out.println();
         }
-        System.out.println("----------------------------------------------");
+        
 
         
         // BOX 3 - TOTAL FOR EACH ROW
@@ -53,10 +53,12 @@ public class Question1 {   // ← must be the same as your file name
                 rowTotals[r] = rowTotals[r] + data[r][c];   // add across the row
             }
         }
- 
-        System.out.println("\nTOTAL FOR EACH ROW");   // ← CHANGE text
+        System.out.println("\n----------------------------------------------");
+        System.out.println("CONSOLE SALES TOTALS FOR EACH CITY");   // ← CHANGE text
+        System.out.println("----------------------------------------------");
         for (int r = 0; r < rowNames.length; r++) {
             System.out.printf("%-15s%10d%n", rowNames[r], rowTotals[r]);
+        
         }
         
         // BOX 5 - WHICH ROW HAS THE HIGHEST TOTAL   (Box 4 must be above this)
@@ -67,7 +69,7 @@ public class Question1 {   // ← must be the same as your file name
                 best = r;
             }
         }
-        System.out.println("\nHighest total: " + rowNames[best]);   // ← CHANGE text
+        System.out.println("\nCITY WITH THE MOST SALES: " + rowNames[best]);   // ← CHANGE text
 
     }
 }
