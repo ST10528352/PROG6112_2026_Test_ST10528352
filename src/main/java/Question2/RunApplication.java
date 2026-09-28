@@ -11,20 +11,17 @@ public class RunApplication {   // ← CHANGE: the name the question asks for
         Scanner input = new Scanner(System.in);
  
         // One prompt + one input line per variable, in the same order as File 2
-        System.out.print("Enter the name: ");      // ← CHANGE: prompt text
+        System.out.print("Enter the Store: ");      // ← CHANGE: prompt text
         String name = input.nextLine();            // ← CHANGE: text = nextLine()
  
         System.out.print("Enter the type: ");      // ← CHANGE
         String type = input.nextLine();            // ← CHANGE
  
-        System.out.print("Enter the quantity: ");  // ← CHANGE
+        System.out.print("Enter the total sales of PS5 consoles for Number 1 electronic store: ");  // ← CHANGE
         int quantity = input.nextInt();            // ← CHANGE: whole number = nextInt()
  
-        System.out.print("Enter the price: ");     // ← CHANGE
-        double price = input.nextDouble();         // ← CHANGE: decimal = nextDouble()
- 
         // Create the object: subclass name, values in the constructor's order
-        ConsoleSales item = new ConsoleSales(name, type, quantity, price);   // ← CHANGE
+        ConsoleSales item = new ConsoleSales(name, type, getTotalSales);   
         item.printReport();                        // ← CHANGE: print method name
  
         input.close();
