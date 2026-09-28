@@ -14,14 +14,14 @@ public class RunApplication {   // ← CHANGE: the name the question asks for
         System.out.print("Enter the Store: ");      // ← CHANGE: prompt text
         String name = input.nextLine();            // ← CHANGE: text = nextLine()
  
-        System.out.print("Enter the type: ");      // ← CHANGE
+        System.out.print("Enter the Console type: ");      // ← CHANGE
         String type = input.nextLine();            // ← CHANGE
  
         System.out.print("Enter the total sales of PS5 consoles for Number 1 electronic store: ");  // ← CHANGE
         int quantity = input.nextInt();            // ← CHANGE: whole number = nextInt()
  
         // Create the object: subclass name, values in the constructor's order
-        ConsoleSales item = new ConsoleSales(name, type, getTotalSales);   
+        ConsoleSales item = new ConsoleSales(name, type, quantity);   
         item.printReport();                        // ← CHANGE: print method name
  
         input.close();

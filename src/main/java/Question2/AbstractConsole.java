@@ -12,7 +12,7 @@ public abstract class AbstractConsole implements IConsoles {   // ← CHANGE: bo
     private int getTotalSales;      
 
     // Constructor - same name as the class, one parameter per variable
-    public AbstractConsole(String name, String type, int quantity, double price) {   // ← CHANGE
+    public AbstractConsole(String name, String type, int quantity) {   // ← CHANGE
         this.getStore = name;              
         this.getConsoleType = type;              
         this.getTotalSales = quantity;                  

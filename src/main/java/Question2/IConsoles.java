@@ -1,12 +1,11 @@
 package Question2;
 
-public interface IConsoles {
-    
-   // Keep only the lines the question lists
-    public void printReport();    
+public interface IConsoles {    
     
     String getConsoleType();
     String getStore();
     int getTotalSales();
+    
+     public void printReport();
 }
 

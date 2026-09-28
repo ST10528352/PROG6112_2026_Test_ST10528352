@@ -6,16 +6,26 @@ package Question2;
 public class ConsoleSales extends AbstractConsole {   // ← CHANGE: subclass name + File 2 name
  
     // Constructor - copy the parameter list from File 2's constructor
-    public ConsoleSales(String name, String type, int quantity, double price) {   // ← CHANGE
-        super(name, type, quantity, price);   // ← CHANGE: same names, same order
+    public ConsoleSales(String name, String type, int quantity) {  
+        super(name, type, quantity);
     }
  
     // The print method - use the exact name the question gives
-    public void printReport() {                                    // ← CHANGE: name
-        System.out.println("\nCONSOLE SALES REPORT");                      // ← CHANGE
+    @Override
+    public void printReport() {                                    
+        System.out.println("\nCONSOLE SALES REPORT");                      
         System.out.println("******************************");
-        System.out.println("NAME: " + getName());                  // ← CHANGE: one line
-        System.out.println("TYPE: " + getType());                  // ← CHANGE  per
-        System.out.printf("TOTAL: " + getTotalSales());    // ← delete if no calculation
+        System.out.println("NAME: " + getStore());                  
+        System.out.println("TYPE: " + getConsoleType());                  
+        System.out.printf("TOTAL: " + getTotalSales());    
     }
-}
+
+    public String getStore() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    public String getConsoleType() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+        public int getTotalSales() {
+        throw new UnsupportedOperationException("Not supported yet.");
+}}
